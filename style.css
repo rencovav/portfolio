@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #3c8067;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -16,9 +16,14 @@ h3 {
 
 h1 {
   font-size: 96px;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 140px;
+  letter-spacing: 15px;
 }
 
 h2 {
+  color: var(--primary-color);
   font-size: 48px;
 }
 
@@ -30,35 +35,6 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
 }
 
 .homepage-link {
@@ -74,33 +50,68 @@ p {
 .about-paragraphs p {
   margin: 10px;
 }
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
+.button-link {
+  padding: 15px 20px;
+  display: inline-block;
+  margin: auto;
+  margin-top: 40px;
+  margin-inline: 25px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 18px;
   text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: var(--box-shadow);
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.button-link:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.button-links {
+  text-align: center;
+}
+
+.contact-links {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.far, .fab {
+  color: var(--primary-color);
+}
+
+.contact {
+  margin-top: 30px;
+  color: #212529;
 }
 
 @media (max-width: 576px) {
+
   h1 {
-    font-size: 70px;
+    line-height: normal;
+    font-size: 60px;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 20px;
   }
   .col-6 {
     width: max-content;
     text-align: center;
   }
 
-  .primary-link {
-    margin-bottom: 50px;
+  .button-link{
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
   }
 
-  .weather-image {
-    margin-top: 30px;
-  }
 }
