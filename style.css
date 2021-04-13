@@ -32,9 +32,24 @@ h3 {
   opacity: 0.7;
 }
 
+img {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.about-paragraph {
+  max-width: 70%;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 .hero {
   background: linear-gradient(to top, #cdd6ce 0%, #deecdda9 100%);
@@ -48,12 +63,9 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
+.about-paragraph h3 {
+text-decoration: underline;
+font-size: 40px;
 }
 .button-link {
   padding: 15px 20px;
@@ -96,6 +108,21 @@ p {
 .contact {
   margin-top: 30px;
   color: #212529;
+}
+
+.skillset {
+  list-style: none;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.skillset li {
+  padding: 8px;
+  font-size: large;
+}
+
+.skillset .skill {
+  color: seagreen;
+  font-weight: bolder;
 }
 
 @media (max-width: 576px) {
